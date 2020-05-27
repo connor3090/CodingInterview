@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "node DataStructures/Arrays/arrayMethods.js"
+run = "node DataStructures/LinkedLists/LinkedLists1.js"
