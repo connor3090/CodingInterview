@@ -1,0 +1,2 @@
+language = "nodejs"
+run = "node DataStructures/Arrays/arrayMethods.js"
