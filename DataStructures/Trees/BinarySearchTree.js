@@ -205,13 +205,15 @@ class BinarySearchTree {
     }
 }
 
+out = '';
 function traverse(node) {
-    const tree = {value: node.value };
-    tree.left = node.left === null ? null :
-    traverse(node.left);
-    tree.right = node.right === null ? null :
-    traverse(node.right);
-    return tree;
+    if (node.left) {
+        traverse(node.left);
+    }
+    out += node.value + ", ";
+    if (node.right) {
+        traverse(node.right);
+    }
 }
 
 //          9
@@ -233,5 +235,5 @@ tree.insert(167);
 tree.insert(178);
 tree.insert(177);
 tree.insert(176);
-tree.remove(199)
-console.log(tree.root);
+traverse(tree.root);
+console.log(out);
